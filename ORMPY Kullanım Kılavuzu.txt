@@ -1,0 +1,18 @@
+# Sistem Gereksinimleri
+- ORM Performans Yazılımı .NET 6 ile geliştirildiği için aşağıdaki SDK'nın bilgisayarda kurulu olması gerekmektedir.
+SDK 6.0.x'in bilgisayar ile uyumlu olan (x64 ya da x86) Windows sürümü kurulmalıdır.
+Kurulum linki: https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+- Yazılımı kaynak kodlarıyla birlikte görüntüleyebilmek ve üzerinde değişiklik yapabilmek için 
+ücretsiz Visual Studio Community 2019 ve üzeri IDE kullanılabilir.
+
+# Kullanım Yöntemi
+1. PostgreSql üzerinde yeni bir veritabanı oluşturularak verilmiş olan Chinook.sql dump dosyası çalıştırılmalıdır.
+2. ORMPYBenchmark projesi altında bulunan appsettings.json dosyasındaki ConnectionStrings => Default kısmı 
+lokal veritabanı ayarlarınıza göre güncellenmelidir.
+3. Visual Studio üzerinden ORMPY projesi çalıştırılmalıdır. 
+4. ORMPYBenchmark projesi varsayılan proje olarak seçilerek işlem süresi ve RAM kullanım testleri gerçekleştirilebilir.
+*ORMPYBenchmark projesi Release modda çalıştırılmalıdır.
+5. ORMPYCPU projesi varsayılan proje olarak seçilerek CPU kullanım testleri gerçekleştirilebilir.
+*ORMPY kullanımıyla ilgili diğer yönlendirmeler yazılım kullanımı sırasında (konsol ekranı üzerinden)
+ açıklamalarla gerçekleştirilmektedir.
+

@@ -1,0 +1,838 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\ereng\source\repos\ORMPY-NET6\ORMPY\ORMPYBenchmark\bin\Release\net6.0\d437cac1-df7e-40b8-bf0f-831139031d62
+// command took 1,82s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\ereng\source\repos\ORMPY-NET6\ORMPY\ORMPYBenchmark\bin\Release\net6.0\d437cac1-df7e-40b8-bf0f-831139031d62
+// command took 3,15s and exited with 0
+// ***** Done, took 00:00:05 (5.12 sec)   *****
+// Found 3 benchmarks:
+//   Read.EFCoreRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+//   Read.DapperRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+//   Read.NHibernateRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+
+// **************************
+// Benchmark: Read.EFCoreRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d437cac1-df7e-40b8-bf0f-831139031d62.dll" --benchmarkName "ORMPYBenchmark.Benchmarks.Read.EFCoreRead" --job "Okuma Karsilastirmalari" --benchmarkId 0 in C:\Users\ereng\source\repos\ORMPY-NET6\ORMPY\ORMPYBenchmark\bin\Release\net6.0\d437cac1-df7e-40b8-bf0f-831139031d62\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Okuma Karsilastirmalari(IterationCount=100, RunStrategy=ColdStart)
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1490192700.00 ns, 1.4902 s/op
+WorkloadActual   2: 1 op, 462028500.00 ns, 462.0285 ms/op
+WorkloadActual   3: 1 op, 508023600.00 ns, 508.0236 ms/op
+WorkloadActual   4: 1 op, 459265700.00 ns, 459.2657 ms/op
+WorkloadActual   5: 1 op, 455701500.00 ns, 455.7015 ms/op
+WorkloadActual   6: 1 op, 464744600.00 ns, 464.7446 ms/op
+WorkloadActual   7: 1 op, 476920700.00 ns, 476.9207 ms/op
+WorkloadActual   8: 1 op, 471662800.00 ns, 471.6628 ms/op
+WorkloadActual   9: 1 op, 487131100.00 ns, 487.1311 ms/op
+WorkloadActual  10: 1 op, 454463700.00 ns, 454.4637 ms/op
+WorkloadActual  11: 1 op, 455268600.00 ns, 455.2686 ms/op
+WorkloadActual  12: 1 op, 456477500.00 ns, 456.4775 ms/op
+WorkloadActual  13: 1 op, 461998500.00 ns, 461.9985 ms/op
+WorkloadActual  14: 1 op, 451143600.00 ns, 451.1436 ms/op
+WorkloadActual  15: 1 op, 453987500.00 ns, 453.9875 ms/op
+WorkloadActual  16: 1 op, 455086800.00 ns, 455.0868 ms/op
+WorkloadActual  17: 1 op, 461336600.00 ns, 461.3366 ms/op
+WorkloadActual  18: 1 op, 456550900.00 ns, 456.5509 ms/op
+WorkloadActual  19: 1 op, 456922900.00 ns, 456.9229 ms/op
+WorkloadActual  20: 1 op, 454012600.00 ns, 454.0126 ms/op
+WorkloadActual  21: 1 op, 469523400.00 ns, 469.5234 ms/op
+WorkloadActual  22: 1 op, 455012800.00 ns, 455.0128 ms/op
+WorkloadActual  23: 1 op, 457616200.00 ns, 457.6162 ms/op
+WorkloadActual  24: 1 op, 464728400.00 ns, 464.7284 ms/op
+WorkloadActual  25: 1 op, 453896500.00 ns, 453.8965 ms/op
+WorkloadActual  26: 1 op, 457610800.00 ns, 457.6108 ms/op
+WorkloadActual  27: 1 op, 459713100.00 ns, 459.7131 ms/op
+WorkloadActual  28: 1 op, 461234300.00 ns, 461.2343 ms/op
+WorkloadActual  29: 1 op, 451256600.00 ns, 451.2566 ms/op
+WorkloadActual  30: 1 op, 463793000.00 ns, 463.7930 ms/op
+WorkloadActual  31: 1 op, 457716300.00 ns, 457.7163 ms/op
+WorkloadActual  32: 1 op, 439139300.00 ns, 439.1393 ms/op
+WorkloadActual  33: 1 op, 444131100.00 ns, 444.1311 ms/op
+WorkloadActual  34: 1 op, 453477800.00 ns, 453.4778 ms/op
+WorkloadActual  35: 1 op, 457071400.00 ns, 457.0714 ms/op
+WorkloadActual  36: 1 op, 454008400.00 ns, 454.0084 ms/op
+WorkloadActual  37: 1 op, 454242800.00 ns, 454.2428 ms/op
+WorkloadActual  38: 1 op, 455523600.00 ns, 455.5236 ms/op
+WorkloadActual  39: 1 op, 452410600.00 ns, 452.4106 ms/op
+WorkloadActual  40: 1 op, 454190300.00 ns, 454.1903 ms/op
+WorkloadActual  41: 1 op, 456792500.00 ns, 456.7925 ms/op
+WorkloadActual  42: 1 op, 452230800.00 ns, 452.2308 ms/op
+WorkloadActual  43: 1 op, 462450100.00 ns, 462.4501 ms/op
+WorkloadActual  44: 1 op, 457122600.00 ns, 457.1226 ms/op
+WorkloadActual  45: 1 op, 457525800.00 ns, 457.5258 ms/op
+WorkloadActual  46: 1 op, 451541000.00 ns, 451.5410 ms/op
+WorkloadActual  47: 1 op, 451327800.00 ns, 451.3278 ms/op
+WorkloadActual  48: 1 op, 451718400.00 ns, 451.7184 ms/op
+WorkloadActual  49: 1 op, 454759600.00 ns, 454.7596 ms/op
+WorkloadActual  50: 1 op, 456665100.00 ns, 456.6651 ms/op
+WorkloadActual  51: 1 op, 458775500.00 ns, 458.7755 ms/op
+WorkloadActual  52: 1 op, 456784300.00 ns, 456.7843 ms/op
+WorkloadActual  53: 1 op, 452802000.00 ns, 452.8020 ms/op
+WorkloadActual  54: 1 op, 453186000.00 ns, 453.1860 ms/op
+WorkloadActual  55: 1 op, 447747200.00 ns, 447.7472 ms/op
+WorkloadActual  56: 1 op, 448298500.00 ns, 448.2985 ms/op
+WorkloadActual  57: 1 op, 455870100.00 ns, 455.8701 ms/op
+WorkloadActual  58: 1 op, 446697100.00 ns, 446.6971 ms/op
+WorkloadActual  59: 1 op, 449155300.00 ns, 449.1553 ms/op
+WorkloadActual  60: 1 op, 450780900.00 ns, 450.7809 ms/op
+WorkloadActual  61: 1 op, 438331600.00 ns, 438.3316 ms/op
+WorkloadActual  62: 1 op, 447780400.00 ns, 447.7804 ms/op
+WorkloadActual  63: 1 op, 450192000.00 ns, 450.1920 ms/op
+WorkloadActual  64: 1 op, 451216300.00 ns, 451.2163 ms/op
+WorkloadActual  65: 1 op, 455576100.00 ns, 455.5761 ms/op
+WorkloadActual  66: 1 op, 448252300.00 ns, 448.2523 ms/op
+WorkloadActual  67: 1 op, 449723300.00 ns, 449.7233 ms/op
+WorkloadActual  68: 1 op, 451994600.00 ns, 451.9946 ms/op
+WorkloadActual  69: 1 op, 449534500.00 ns, 449.5345 ms/op
+WorkloadActual  70: 1 op, 460124700.00 ns, 460.1247 ms/op
+WorkloadActual  71: 1 op, 444855000.00 ns, 444.8550 ms/op
+WorkloadActual  72: 1 op, 447180300.00 ns, 447.1803 ms/op
+WorkloadActual  73: 1 op, 450625100.00 ns, 450.6251 ms/op
+WorkloadActual  74: 1 op, 450950400.00 ns, 450.9504 ms/op
+WorkloadActual  75: 1 op, 457504600.00 ns, 457.5046 ms/op
+WorkloadActual  76: 1 op, 449711600.00 ns, 449.7116 ms/op
+WorkloadActual  77: 1 op, 441566100.00 ns, 441.5661 ms/op
+WorkloadActual  78: 1 op, 452878600.00 ns, 452.8786 ms/op
+WorkloadActual  79: 1 op, 446215600.00 ns, 446.2156 ms/op
+WorkloadActual  80: 1 op, 446007200.00 ns, 446.0072 ms/op
+WorkloadActual  81: 1 op, 449064000.00 ns, 449.0640 ms/op
+WorkloadActual  82: 1 op, 454491000.00 ns, 454.4910 ms/op
+WorkloadActual  83: 1 op, 459698200.00 ns, 459.6982 ms/op
+WorkloadActual  84: 1 op, 454571700.00 ns, 454.5717 ms/op
+WorkloadActual  85: 1 op, 464372800.00 ns, 464.3728 ms/op
+WorkloadActual  86: 1 op, 459195800.00 ns, 459.1958 ms/op
+WorkloadActual  87: 1 op, 453007700.00 ns, 453.0077 ms/op
+WorkloadActual  88: 1 op, 439546800.00 ns, 439.5468 ms/op
+WorkloadActual  89: 1 op, 455100600.00 ns, 455.1006 ms/op
+WorkloadActual  90: 1 op, 455158800.00 ns, 455.1588 ms/op
+WorkloadActual  91: 1 op, 455062100.00 ns, 455.0621 ms/op
+WorkloadActual  92: 1 op, 454332900.00 ns, 454.3329 ms/op
+WorkloadActual  93: 1 op, 455271500.00 ns, 455.2715 ms/op
+WorkloadActual  94: 1 op, 451633000.00 ns, 451.6330 ms/op
+WorkloadActual  95: 1 op, 456395800.00 ns, 456.3958 ms/op
+WorkloadActual  96: 1 op, 443152900.00 ns, 443.1529 ms/op
+WorkloadActual  97: 1 op, 442198000.00 ns, 442.1980 ms/op
+WorkloadActual  98: 1 op, 447240200.00 ns, 447.2402 ms/op
+WorkloadActual  99: 1 op, 453197900.00 ns, 453.1979 ms/op
+WorkloadActual  100: 1 op, 456835200.00 ns, 456.8352 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1490192700.00 ns, 1.4902 s/op
+WorkloadResult   2: 1 op, 462028500.00 ns, 462.0285 ms/op
+WorkloadResult   3: 1 op, 508023600.00 ns, 508.0236 ms/op
+WorkloadResult   4: 1 op, 459265700.00 ns, 459.2657 ms/op
+WorkloadResult   5: 1 op, 455701500.00 ns, 455.7015 ms/op
+WorkloadResult   6: 1 op, 464744600.00 ns, 464.7446 ms/op
+WorkloadResult   7: 1 op, 476920700.00 ns, 476.9207 ms/op
+WorkloadResult   8: 1 op, 471662800.00 ns, 471.6628 ms/op
+WorkloadResult   9: 1 op, 487131100.00 ns, 487.1311 ms/op
+WorkloadResult  10: 1 op, 454463700.00 ns, 454.4637 ms/op
+WorkloadResult  11: 1 op, 455268600.00 ns, 455.2686 ms/op
+WorkloadResult  12: 1 op, 456477500.00 ns, 456.4775 ms/op
+WorkloadResult  13: 1 op, 461998500.00 ns, 461.9985 ms/op
+WorkloadResult  14: 1 op, 451143600.00 ns, 451.1436 ms/op
+WorkloadResult  15: 1 op, 453987500.00 ns, 453.9875 ms/op
+WorkloadResult  16: 1 op, 455086800.00 ns, 455.0868 ms/op
+WorkloadResult  17: 1 op, 461336600.00 ns, 461.3366 ms/op
+WorkloadResult  18: 1 op, 456550900.00 ns, 456.5509 ms/op
+WorkloadResult  19: 1 op, 456922900.00 ns, 456.9229 ms/op
+WorkloadResult  20: 1 op, 454012600.00 ns, 454.0126 ms/op
+WorkloadResult  21: 1 op, 469523400.00 ns, 469.5234 ms/op
+WorkloadResult  22: 1 op, 455012800.00 ns, 455.0128 ms/op
+WorkloadResult  23: 1 op, 457616200.00 ns, 457.6162 ms/op
+WorkloadResult  24: 1 op, 464728400.00 ns, 464.7284 ms/op
+WorkloadResult  25: 1 op, 453896500.00 ns, 453.8965 ms/op
+WorkloadResult  26: 1 op, 457610800.00 ns, 457.6108 ms/op
+WorkloadResult  27: 1 op, 459713100.00 ns, 459.7131 ms/op
+WorkloadResult  28: 1 op, 461234300.00 ns, 461.2343 ms/op
+WorkloadResult  29: 1 op, 451256600.00 ns, 451.2566 ms/op
+WorkloadResult  30: 1 op, 463793000.00 ns, 463.7930 ms/op
+WorkloadResult  31: 1 op, 457716300.00 ns, 457.7163 ms/op
+WorkloadResult  32: 1 op, 439139300.00 ns, 439.1393 ms/op
+WorkloadResult  33: 1 op, 444131100.00 ns, 444.1311 ms/op
+WorkloadResult  34: 1 op, 453477800.00 ns, 453.4778 ms/op
+WorkloadResult  35: 1 op, 457071400.00 ns, 457.0714 ms/op
+WorkloadResult  36: 1 op, 454008400.00 ns, 454.0084 ms/op
+WorkloadResult  37: 1 op, 454242800.00 ns, 454.2428 ms/op
+WorkloadResult  38: 1 op, 455523600.00 ns, 455.5236 ms/op
+WorkloadResult  39: 1 op, 452410600.00 ns, 452.4106 ms/op
+WorkloadResult  40: 1 op, 454190300.00 ns, 454.1903 ms/op
+WorkloadResult  41: 1 op, 456792500.00 ns, 456.7925 ms/op
+WorkloadResult  42: 1 op, 452230800.00 ns, 452.2308 ms/op
+WorkloadResult  43: 1 op, 462450100.00 ns, 462.4501 ms/op
+WorkloadResult  44: 1 op, 457122600.00 ns, 457.1226 ms/op
+WorkloadResult  45: 1 op, 457525800.00 ns, 457.5258 ms/op
+WorkloadResult  46: 1 op, 451541000.00 ns, 451.5410 ms/op
+WorkloadResult  47: 1 op, 451327800.00 ns, 451.3278 ms/op
+WorkloadResult  48: 1 op, 451718400.00 ns, 451.7184 ms/op
+WorkloadResult  49: 1 op, 454759600.00 ns, 454.7596 ms/op
+WorkloadResult  50: 1 op, 456665100.00 ns, 456.6651 ms/op
+WorkloadResult  51: 1 op, 458775500.00 ns, 458.7755 ms/op
+WorkloadResult  52: 1 op, 456784300.00 ns, 456.7843 ms/op
+WorkloadResult  53: 1 op, 452802000.00 ns, 452.8020 ms/op
+WorkloadResult  54: 1 op, 453186000.00 ns, 453.1860 ms/op
+WorkloadResult  55: 1 op, 447747200.00 ns, 447.7472 ms/op
+WorkloadResult  56: 1 op, 448298500.00 ns, 448.2985 ms/op
+WorkloadResult  57: 1 op, 455870100.00 ns, 455.8701 ms/op
+WorkloadResult  58: 1 op, 446697100.00 ns, 446.6971 ms/op
+WorkloadResult  59: 1 op, 449155300.00 ns, 449.1553 ms/op
+WorkloadResult  60: 1 op, 450780900.00 ns, 450.7809 ms/op
+WorkloadResult  61: 1 op, 438331600.00 ns, 438.3316 ms/op
+WorkloadResult  62: 1 op, 447780400.00 ns, 447.7804 ms/op
+WorkloadResult  63: 1 op, 450192000.00 ns, 450.1920 ms/op
+WorkloadResult  64: 1 op, 451216300.00 ns, 451.2163 ms/op
+WorkloadResult  65: 1 op, 455576100.00 ns, 455.5761 ms/op
+WorkloadResult  66: 1 op, 448252300.00 ns, 448.2523 ms/op
+WorkloadResult  67: 1 op, 449723300.00 ns, 449.7233 ms/op
+WorkloadResult  68: 1 op, 451994600.00 ns, 451.9946 ms/op
+WorkloadResult  69: 1 op, 449534500.00 ns, 449.5345 ms/op
+WorkloadResult  70: 1 op, 460124700.00 ns, 460.1247 ms/op
+WorkloadResult  71: 1 op, 444855000.00 ns, 444.8550 ms/op
+WorkloadResult  72: 1 op, 447180300.00 ns, 447.1803 ms/op
+WorkloadResult  73: 1 op, 450625100.00 ns, 450.6251 ms/op
+WorkloadResult  74: 1 op, 450950400.00 ns, 450.9504 ms/op
+WorkloadResult  75: 1 op, 457504600.00 ns, 457.5046 ms/op
+WorkloadResult  76: 1 op, 449711600.00 ns, 449.7116 ms/op
+WorkloadResult  77: 1 op, 441566100.00 ns, 441.5661 ms/op
+WorkloadResult  78: 1 op, 452878600.00 ns, 452.8786 ms/op
+WorkloadResult  79: 1 op, 446215600.00 ns, 446.2156 ms/op
+WorkloadResult  80: 1 op, 446007200.00 ns, 446.0072 ms/op
+WorkloadResult  81: 1 op, 449064000.00 ns, 449.0640 ms/op
+WorkloadResult  82: 1 op, 454491000.00 ns, 454.4910 ms/op
+WorkloadResult  83: 1 op, 459698200.00 ns, 459.6982 ms/op
+WorkloadResult  84: 1 op, 454571700.00 ns, 454.5717 ms/op
+WorkloadResult  85: 1 op, 464372800.00 ns, 464.3728 ms/op
+WorkloadResult  86: 1 op, 459195800.00 ns, 459.1958 ms/op
+WorkloadResult  87: 1 op, 453007700.00 ns, 453.0077 ms/op
+WorkloadResult  88: 1 op, 439546800.00 ns, 439.5468 ms/op
+WorkloadResult  89: 1 op, 455100600.00 ns, 455.1006 ms/op
+WorkloadResult  90: 1 op, 455158800.00 ns, 455.1588 ms/op
+WorkloadResult  91: 1 op, 455062100.00 ns, 455.0621 ms/op
+WorkloadResult  92: 1 op, 454332900.00 ns, 454.3329 ms/op
+WorkloadResult  93: 1 op, 455271500.00 ns, 455.2715 ms/op
+WorkloadResult  94: 1 op, 451633000.00 ns, 451.6330 ms/op
+WorkloadResult  95: 1 op, 456395800.00 ns, 456.3958 ms/op
+WorkloadResult  96: 1 op, 443152900.00 ns, 443.1529 ms/op
+WorkloadResult  97: 1 op, 442198000.00 ns, 442.1980 ms/op
+WorkloadResult  98: 1 op, 447240200.00 ns, 447.2402 ms/op
+WorkloadResult  99: 1 op, 453197900.00 ns, 453.1979 ms/op
+WorkloadResult  100: 1 op, 456835200.00 ns, 456.8352 ms/op
+GC:  18 6 1 126574424 1
+Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 20128 has exited with code 0.
+
+Mean = 465.312 ms, StdErr = 10.391 ms (2.23%), N = 100, StdDev = 103.912 ms
+Min = 438.332 ms, Q1 = 450.908 ms, Median = 454.477 ms, Q3 = 457.510 ms, Max = 1,490.193 ms
+IQR = 6.602 ms, LowerFence = 441.005 ms, UpperFence = 467.413 ms
+ConfidenceInterval = [430.070 ms; 500.554 ms] (CI 99.9%), Margin = 35.242 ms (7.57% of Mean)
+Skewness = 9.59, Kurtosis = 94.63, MValue = 2
+
+// **************************
+// Benchmark: Read.DapperRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d437cac1-df7e-40b8-bf0f-831139031d62.dll" --benchmarkName "ORMPYBenchmark.Benchmarks.Read.DapperRead" --job "Okuma Karsilastirmalari" --benchmarkId 1 in C:\Users\ereng\source\repos\ORMPY-NET6\ORMPY\ORMPYBenchmark\bin\Release\net6.0\d437cac1-df7e-40b8-bf0f-831139031d62\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Okuma Karsilastirmalari(IterationCount=100, RunStrategy=ColdStart)
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 425182400.00 ns, 425.1824 ms/op
+WorkloadActual   2: 1 op, 250507200.00 ns, 250.5072 ms/op
+WorkloadActual   3: 1 op, 236054500.00 ns, 236.0545 ms/op
+WorkloadActual   4: 1 op, 255977400.00 ns, 255.9774 ms/op
+WorkloadActual   5: 1 op, 244929500.00 ns, 244.9295 ms/op
+WorkloadActual   6: 1 op, 252279000.00 ns, 252.2790 ms/op
+WorkloadActual   7: 1 op, 233271100.00 ns, 233.2711 ms/op
+WorkloadActual   8: 1 op, 252093800.00 ns, 252.0938 ms/op
+WorkloadActual   9: 1 op, 231850600.00 ns, 231.8506 ms/op
+WorkloadActual  10: 1 op, 248401100.00 ns, 248.4011 ms/op
+WorkloadActual  11: 1 op, 238157500.00 ns, 238.1575 ms/op
+WorkloadActual  12: 1 op, 254783900.00 ns, 254.7839 ms/op
+WorkloadActual  13: 1 op, 233343700.00 ns, 233.3437 ms/op
+WorkloadActual  14: 1 op, 251019700.00 ns, 251.0197 ms/op
+WorkloadActual  15: 1 op, 242670500.00 ns, 242.6705 ms/op
+WorkloadActual  16: 1 op, 222860400.00 ns, 222.8604 ms/op
+WorkloadActual  17: 1 op, 233805700.00 ns, 233.8057 ms/op
+WorkloadActual  18: 1 op, 252255300.00 ns, 252.2553 ms/op
+WorkloadActual  19: 1 op, 235478200.00 ns, 235.4782 ms/op
+WorkloadActual  20: 1 op, 253980600.00 ns, 253.9806 ms/op
+WorkloadActual  21: 1 op, 234697200.00 ns, 234.6972 ms/op
+WorkloadActual  22: 1 op, 249218500.00 ns, 249.2185 ms/op
+WorkloadActual  23: 1 op, 240532200.00 ns, 240.5322 ms/op
+WorkloadActual  24: 1 op, 249849700.00 ns, 249.8497 ms/op
+WorkloadActual  25: 1 op, 235868700.00 ns, 235.8687 ms/op
+WorkloadActual  26: 1 op, 255678400.00 ns, 255.6784 ms/op
+WorkloadActual  27: 1 op, 239055300.00 ns, 239.0553 ms/op
+WorkloadActual  28: 1 op, 254402500.00 ns, 254.4025 ms/op
+WorkloadActual  29: 1 op, 235755700.00 ns, 235.7557 ms/op
+WorkloadActual  30: 1 op, 252121600.00 ns, 252.1216 ms/op
+WorkloadActual  31: 1 op, 254661400.00 ns, 254.6614 ms/op
+WorkloadActual  32: 1 op, 259468800.00 ns, 259.4688 ms/op
+WorkloadActual  33: 1 op, 231947100.00 ns, 231.9471 ms/op
+WorkloadActual  34: 1 op, 254513700.00 ns, 254.5137 ms/op
+WorkloadActual  35: 1 op, 234447700.00 ns, 234.4477 ms/op
+WorkloadActual  36: 1 op, 247042600.00 ns, 247.0426 ms/op
+WorkloadActual  37: 1 op, 234362900.00 ns, 234.3629 ms/op
+WorkloadActual  38: 1 op, 250743700.00 ns, 250.7437 ms/op
+WorkloadActual  39: 1 op, 232943100.00 ns, 232.9431 ms/op
+WorkloadActual  40: 1 op, 250262500.00 ns, 250.2625 ms/op
+WorkloadActual  41: 1 op, 238701900.00 ns, 238.7019 ms/op
+WorkloadActual  42: 1 op, 246655000.00 ns, 246.6550 ms/op
+WorkloadActual  43: 1 op, 237149600.00 ns, 237.1496 ms/op
+WorkloadActual  44: 1 op, 254325200.00 ns, 254.3252 ms/op
+WorkloadActual  45: 1 op, 233215700.00 ns, 233.2157 ms/op
+WorkloadActual  46: 1 op, 251772000.00 ns, 251.7720 ms/op
+WorkloadActual  47: 1 op, 235342400.00 ns, 235.3424 ms/op
+WorkloadActual  48: 1 op, 249158900.00 ns, 249.1589 ms/op
+WorkloadActual  49: 1 op, 233172800.00 ns, 233.1728 ms/op
+WorkloadActual  50: 1 op, 246741700.00 ns, 246.7417 ms/op
+WorkloadActual  51: 1 op, 231021500.00 ns, 231.0215 ms/op
+WorkloadActual  52: 1 op, 249091300.00 ns, 249.0913 ms/op
+WorkloadActual  53: 1 op, 228959700.00 ns, 228.9597 ms/op
+WorkloadActual  54: 1 op, 250192500.00 ns, 250.1925 ms/op
+WorkloadActual  55: 1 op, 235506000.00 ns, 235.5060 ms/op
+WorkloadActual  56: 1 op, 250808200.00 ns, 250.8082 ms/op
+WorkloadActual  57: 1 op, 231745600.00 ns, 231.7456 ms/op
+WorkloadActual  58: 1 op, 252480100.00 ns, 252.4801 ms/op
+WorkloadActual  59: 1 op, 230722100.00 ns, 230.7221 ms/op
+WorkloadActual  60: 1 op, 247995700.00 ns, 247.9957 ms/op
+WorkloadActual  61: 1 op, 234221200.00 ns, 234.2212 ms/op
+WorkloadActual  62: 1 op, 243295400.00 ns, 243.2954 ms/op
+WorkloadActual  63: 1 op, 228887800.00 ns, 228.8878 ms/op
+WorkloadActual  64: 1 op, 247774200.00 ns, 247.7742 ms/op
+WorkloadActual  65: 1 op, 228182600.00 ns, 228.1826 ms/op
+WorkloadActual  66: 1 op, 247878200.00 ns, 247.8782 ms/op
+WorkloadActual  67: 1 op, 231741100.00 ns, 231.7411 ms/op
+WorkloadActual  68: 1 op, 246926700.00 ns, 246.9267 ms/op
+WorkloadActual  69: 1 op, 235708200.00 ns, 235.7082 ms/op
+WorkloadActual  70: 1 op, 250075000.00 ns, 250.0750 ms/op
+WorkloadActual  71: 1 op, 241798400.00 ns, 241.7984 ms/op
+WorkloadActual  72: 1 op, 253199100.00 ns, 253.1991 ms/op
+WorkloadActual  73: 1 op, 238747300.00 ns, 238.7473 ms/op
+WorkloadActual  74: 1 op, 248853000.00 ns, 248.8530 ms/op
+WorkloadActual  75: 1 op, 235010100.00 ns, 235.0101 ms/op
+WorkloadActual  76: 1 op, 252300500.00 ns, 252.3005 ms/op
+WorkloadActual  77: 1 op, 233753800.00 ns, 233.7538 ms/op
+WorkloadActual  78: 1 op, 250297400.00 ns, 250.2974 ms/op
+WorkloadActual  79: 1 op, 238754600.00 ns, 238.7546 ms/op
+WorkloadActual  80: 1 op, 253008600.00 ns, 253.0086 ms/op
+WorkloadActual  81: 1 op, 235298000.00 ns, 235.2980 ms/op
+WorkloadActual  82: 1 op, 255903200.00 ns, 255.9032 ms/op
+WorkloadActual  83: 1 op, 241767100.00 ns, 241.7671 ms/op
+WorkloadActual  84: 1 op, 249862500.00 ns, 249.8625 ms/op
+WorkloadActual  85: 1 op, 238453400.00 ns, 238.4534 ms/op
+WorkloadActual  86: 1 op, 256879500.00 ns, 256.8795 ms/op
+WorkloadActual  87: 1 op, 233699000.00 ns, 233.6990 ms/op
+WorkloadActual  88: 1 op, 250728600.00 ns, 250.7286 ms/op
+WorkloadActual  89: 1 op, 233956900.00 ns, 233.9569 ms/op
+WorkloadActual  90: 1 op, 257180700.00 ns, 257.1807 ms/op
+WorkloadActual  91: 1 op, 235580200.00 ns, 235.5802 ms/op
+WorkloadActual  92: 1 op, 248181400.00 ns, 248.1814 ms/op
+WorkloadActual  93: 1 op, 235983500.00 ns, 235.9835 ms/op
+WorkloadActual  94: 1 op, 256090200.00 ns, 256.0902 ms/op
+WorkloadActual  95: 1 op, 234329500.00 ns, 234.3295 ms/op
+WorkloadActual  96: 1 op, 250711700.00 ns, 250.7117 ms/op
+WorkloadActual  97: 1 op, 237134300.00 ns, 237.1343 ms/op
+WorkloadActual  98: 1 op, 256282600.00 ns, 256.2826 ms/op
+WorkloadActual  99: 1 op, 235946200.00 ns, 235.9462 ms/op
+WorkloadActual  100: 1 op, 248421300.00 ns, 248.4213 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 425182400.00 ns, 425.1824 ms/op
+WorkloadResult   2: 1 op, 250507200.00 ns, 250.5072 ms/op
+WorkloadResult   3: 1 op, 236054500.00 ns, 236.0545 ms/op
+WorkloadResult   4: 1 op, 255977400.00 ns, 255.9774 ms/op
+WorkloadResult   5: 1 op, 244929500.00 ns, 244.9295 ms/op
+WorkloadResult   6: 1 op, 252279000.00 ns, 252.2790 ms/op
+WorkloadResult   7: 1 op, 233271100.00 ns, 233.2711 ms/op
+WorkloadResult   8: 1 op, 252093800.00 ns, 252.0938 ms/op
+WorkloadResult   9: 1 op, 231850600.00 ns, 231.8506 ms/op
+WorkloadResult  10: 1 op, 248401100.00 ns, 248.4011 ms/op
+WorkloadResult  11: 1 op, 238157500.00 ns, 238.1575 ms/op
+WorkloadResult  12: 1 op, 254783900.00 ns, 254.7839 ms/op
+WorkloadResult  13: 1 op, 233343700.00 ns, 233.3437 ms/op
+WorkloadResult  14: 1 op, 251019700.00 ns, 251.0197 ms/op
+WorkloadResult  15: 1 op, 242670500.00 ns, 242.6705 ms/op
+WorkloadResult  16: 1 op, 222860400.00 ns, 222.8604 ms/op
+WorkloadResult  17: 1 op, 233805700.00 ns, 233.8057 ms/op
+WorkloadResult  18: 1 op, 252255300.00 ns, 252.2553 ms/op
+WorkloadResult  19: 1 op, 235478200.00 ns, 235.4782 ms/op
+WorkloadResult  20: 1 op, 253980600.00 ns, 253.9806 ms/op
+WorkloadResult  21: 1 op, 234697200.00 ns, 234.6972 ms/op
+WorkloadResult  22: 1 op, 249218500.00 ns, 249.2185 ms/op
+WorkloadResult  23: 1 op, 240532200.00 ns, 240.5322 ms/op
+WorkloadResult  24: 1 op, 249849700.00 ns, 249.8497 ms/op
+WorkloadResult  25: 1 op, 235868700.00 ns, 235.8687 ms/op
+WorkloadResult  26: 1 op, 255678400.00 ns, 255.6784 ms/op
+WorkloadResult  27: 1 op, 239055300.00 ns, 239.0553 ms/op
+WorkloadResult  28: 1 op, 254402500.00 ns, 254.4025 ms/op
+WorkloadResult  29: 1 op, 235755700.00 ns, 235.7557 ms/op
+WorkloadResult  30: 1 op, 252121600.00 ns, 252.1216 ms/op
+WorkloadResult  31: 1 op, 254661400.00 ns, 254.6614 ms/op
+WorkloadResult  32: 1 op, 259468800.00 ns, 259.4688 ms/op
+WorkloadResult  33: 1 op, 231947100.00 ns, 231.9471 ms/op
+WorkloadResult  34: 1 op, 254513700.00 ns, 254.5137 ms/op
+WorkloadResult  35: 1 op, 234447700.00 ns, 234.4477 ms/op
+WorkloadResult  36: 1 op, 247042600.00 ns, 247.0426 ms/op
+WorkloadResult  37: 1 op, 234362900.00 ns, 234.3629 ms/op
+WorkloadResult  38: 1 op, 250743700.00 ns, 250.7437 ms/op
+WorkloadResult  39: 1 op, 232943100.00 ns, 232.9431 ms/op
+WorkloadResult  40: 1 op, 250262500.00 ns, 250.2625 ms/op
+WorkloadResult  41: 1 op, 238701900.00 ns, 238.7019 ms/op
+WorkloadResult  42: 1 op, 246655000.00 ns, 246.6550 ms/op
+WorkloadResult  43: 1 op, 237149600.00 ns, 237.1496 ms/op
+WorkloadResult  44: 1 op, 254325200.00 ns, 254.3252 ms/op
+WorkloadResult  45: 1 op, 233215700.00 ns, 233.2157 ms/op
+WorkloadResult  46: 1 op, 251772000.00 ns, 251.7720 ms/op
+WorkloadResult  47: 1 op, 235342400.00 ns, 235.3424 ms/op
+WorkloadResult  48: 1 op, 249158900.00 ns, 249.1589 ms/op
+WorkloadResult  49: 1 op, 233172800.00 ns, 233.1728 ms/op
+WorkloadResult  50: 1 op, 246741700.00 ns, 246.7417 ms/op
+WorkloadResult  51: 1 op, 231021500.00 ns, 231.0215 ms/op
+WorkloadResult  52: 1 op, 249091300.00 ns, 249.0913 ms/op
+WorkloadResult  53: 1 op, 228959700.00 ns, 228.9597 ms/op
+WorkloadResult  54: 1 op, 250192500.00 ns, 250.1925 ms/op
+WorkloadResult  55: 1 op, 235506000.00 ns, 235.5060 ms/op
+WorkloadResult  56: 1 op, 250808200.00 ns, 250.8082 ms/op
+WorkloadResult  57: 1 op, 231745600.00 ns, 231.7456 ms/op
+WorkloadResult  58: 1 op, 252480100.00 ns, 252.4801 ms/op
+WorkloadResult  59: 1 op, 230722100.00 ns, 230.7221 ms/op
+WorkloadResult  60: 1 op, 247995700.00 ns, 247.9957 ms/op
+WorkloadResult  61: 1 op, 234221200.00 ns, 234.2212 ms/op
+WorkloadResult  62: 1 op, 243295400.00 ns, 243.2954 ms/op
+WorkloadResult  63: 1 op, 228887800.00 ns, 228.8878 ms/op
+WorkloadResult  64: 1 op, 247774200.00 ns, 247.7742 ms/op
+WorkloadResult  65: 1 op, 228182600.00 ns, 228.1826 ms/op
+WorkloadResult  66: 1 op, 247878200.00 ns, 247.8782 ms/op
+WorkloadResult  67: 1 op, 231741100.00 ns, 231.7411 ms/op
+WorkloadResult  68: 1 op, 246926700.00 ns, 246.9267 ms/op
+WorkloadResult  69: 1 op, 235708200.00 ns, 235.7082 ms/op
+WorkloadResult  70: 1 op, 250075000.00 ns, 250.0750 ms/op
+WorkloadResult  71: 1 op, 241798400.00 ns, 241.7984 ms/op
+WorkloadResult  72: 1 op, 253199100.00 ns, 253.1991 ms/op
+WorkloadResult  73: 1 op, 238747300.00 ns, 238.7473 ms/op
+WorkloadResult  74: 1 op, 248853000.00 ns, 248.8530 ms/op
+WorkloadResult  75: 1 op, 235010100.00 ns, 235.0101 ms/op
+WorkloadResult  76: 1 op, 252300500.00 ns, 252.3005 ms/op
+WorkloadResult  77: 1 op, 233753800.00 ns, 233.7538 ms/op
+WorkloadResult  78: 1 op, 250297400.00 ns, 250.2974 ms/op
+WorkloadResult  79: 1 op, 238754600.00 ns, 238.7546 ms/op
+WorkloadResult  80: 1 op, 253008600.00 ns, 253.0086 ms/op
+WorkloadResult  81: 1 op, 235298000.00 ns, 235.2980 ms/op
+WorkloadResult  82: 1 op, 255903200.00 ns, 255.9032 ms/op
+WorkloadResult  83: 1 op, 241767100.00 ns, 241.7671 ms/op
+WorkloadResult  84: 1 op, 249862500.00 ns, 249.8625 ms/op
+WorkloadResult  85: 1 op, 238453400.00 ns, 238.4534 ms/op
+WorkloadResult  86: 1 op, 256879500.00 ns, 256.8795 ms/op
+WorkloadResult  87: 1 op, 233699000.00 ns, 233.6990 ms/op
+WorkloadResult  88: 1 op, 250728600.00 ns, 250.7286 ms/op
+WorkloadResult  89: 1 op, 233956900.00 ns, 233.9569 ms/op
+WorkloadResult  90: 1 op, 257180700.00 ns, 257.1807 ms/op
+WorkloadResult  91: 1 op, 235580200.00 ns, 235.5802 ms/op
+WorkloadResult  92: 1 op, 248181400.00 ns, 248.1814 ms/op
+WorkloadResult  93: 1 op, 235983500.00 ns, 235.9835 ms/op
+WorkloadResult  94: 1 op, 256090200.00 ns, 256.0902 ms/op
+WorkloadResult  95: 1 op, 234329500.00 ns, 234.3295 ms/op
+WorkloadResult  96: 1 op, 250711700.00 ns, 250.7117 ms/op
+WorkloadResult  97: 1 op, 237134300.00 ns, 237.1343 ms/op
+WorkloadResult  98: 1 op, 256282600.00 ns, 256.2826 ms/op
+WorkloadResult  99: 1 op, 235946200.00 ns, 235.9462 ms/op
+WorkloadResult  100: 1 op, 248421300.00 ns, 248.4213 ms/op
+GC:  6 2 0 39230072 1
+Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 15696 has exited with code 0.
+
+Mean = 245.140 ms, StdErr = 2.028 ms (0.83%), N = 100, StdDev = 20.276 ms
+Min = 222.860 ms, Q1 = 235.226 ms, Median = 245.792 ms, Q3 = 250.861 ms, Max = 425.182 ms
+IQR = 15.635 ms, LowerFence = 211.773 ms, UpperFence = 274.314 ms
+ConfidenceInterval = [238.264 ms; 252.017 ms] (CI 99.9%), Margin = 6.877 ms (2.81% of Mean)
+Skewness = 6.94, Kurtosis = 62.24, MValue = 3.53
+
+// **************************
+// Benchmark: Read.NHibernateRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "d437cac1-df7e-40b8-bf0f-831139031d62.dll" --benchmarkName "ORMPYBenchmark.Benchmarks.Read.NHibernateRead" --job "Okuma Karsilastirmalari" --benchmarkId 2 in C:\Users\ereng\source\repos\ORMPY-NET6\ORMPY\ORMPYBenchmark\bin\Release\net6.0\d437cac1-df7e-40b8-bf0f-831139031d62\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Okuma Karsilastirmalari(IterationCount=100, RunStrategy=ColdStart)
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 1224013300.00 ns, 1.2240 s/op
+WorkloadActual   2: 1 op, 772616500.00 ns, 772.6165 ms/op
+WorkloadActual   3: 1 op, 770116500.00 ns, 770.1165 ms/op
+WorkloadActual   4: 1 op, 767728800.00 ns, 767.7288 ms/op
+WorkloadActual   5: 1 op, 775829900.00 ns, 775.8299 ms/op
+WorkloadActual   6: 1 op, 763699100.00 ns, 763.6991 ms/op
+WorkloadActual   7: 1 op, 813492200.00 ns, 813.4922 ms/op
+WorkloadActual   8: 1 op, 826010800.00 ns, 826.0108 ms/op
+WorkloadActual   9: 1 op, 785371400.00 ns, 785.3714 ms/op
+WorkloadActual  10: 1 op, 752038100.00 ns, 752.0381 ms/op
+WorkloadActual  11: 1 op, 770708500.00 ns, 770.7085 ms/op
+WorkloadActual  12: 1 op, 760953700.00 ns, 760.9537 ms/op
+WorkloadActual  13: 1 op, 767861000.00 ns, 767.8610 ms/op
+WorkloadActual  14: 1 op, 772042200.00 ns, 772.0422 ms/op
+WorkloadActual  15: 1 op, 813921900.00 ns, 813.9219 ms/op
+WorkloadActual  16: 1 op, 821534300.00 ns, 821.5343 ms/op
+WorkloadActual  17: 1 op, 775093800.00 ns, 775.0938 ms/op
+WorkloadActual  18: 1 op, 812878700.00 ns, 812.8787 ms/op
+WorkloadActual  19: 1 op, 754526400.00 ns, 754.5264 ms/op
+WorkloadActual  20: 1 op, 784872000.00 ns, 784.8720 ms/op
+WorkloadActual  21: 1 op, 765528700.00 ns, 765.5287 ms/op
+WorkloadActual  22: 1 op, 802685200.00 ns, 802.6852 ms/op
+WorkloadActual  23: 1 op, 804354000.00 ns, 804.3540 ms/op
+WorkloadActual  24: 1 op, 766224800.00 ns, 766.2248 ms/op
+WorkloadActual  25: 1 op, 771928100.00 ns, 771.9281 ms/op
+WorkloadActual  26: 1 op, 770112700.00 ns, 770.1127 ms/op
+WorkloadActual  27: 1 op, 774132800.00 ns, 774.1328 ms/op
+WorkloadActual  28: 1 op, 765836500.00 ns, 765.8365 ms/op
+WorkloadActual  29: 1 op, 783824100.00 ns, 783.8241 ms/op
+WorkloadActual  30: 1 op, 821077700.00 ns, 821.0777 ms/op
+WorkloadActual  31: 1 op, 819727900.00 ns, 819.7279 ms/op
+WorkloadActual  32: 1 op, 791640500.00 ns, 791.6405 ms/op
+WorkloadActual  33: 1 op, 793299300.00 ns, 793.2993 ms/op
+WorkloadActual  34: 1 op, 776178400.00 ns, 776.1784 ms/op
+WorkloadActual  35: 1 op, 775492700.00 ns, 775.4927 ms/op
+WorkloadActual  36: 1 op, 775357300.00 ns, 775.3573 ms/op
+WorkloadActual  37: 1 op, 782484800.00 ns, 782.4848 ms/op
+WorkloadActual  38: 1 op, 806658900.00 ns, 806.6589 ms/op
+WorkloadActual  39: 1 op, 812115600.00 ns, 812.1156 ms/op
+WorkloadActual  40: 1 op, 791114300.00 ns, 791.1143 ms/op
+WorkloadActual  41: 1 op, 800181000.00 ns, 800.1810 ms/op
+WorkloadActual  42: 1 op, 848810200.00 ns, 848.8102 ms/op
+WorkloadActual  43: 1 op, 831119200.00 ns, 831.1192 ms/op
+WorkloadActual  44: 1 op, 796158400.00 ns, 796.1584 ms/op
+WorkloadActual  45: 1 op, 801859000.00 ns, 801.8590 ms/op
+WorkloadActual  46: 1 op, 805795200.00 ns, 805.7952 ms/op
+WorkloadActual  47: 1 op, 807414600.00 ns, 807.4146 ms/op
+WorkloadActual  48: 1 op, 772309000.00 ns, 772.3090 ms/op
+WorkloadActual  49: 1 op, 788394400.00 ns, 788.3944 ms/op
+WorkloadActual  50: 1 op, 797993400.00 ns, 797.9934 ms/op
+WorkloadActual  51: 1 op, 826001900.00 ns, 826.0019 ms/op
+WorkloadActual  52: 1 op, 826697500.00 ns, 826.6975 ms/op
+WorkloadActual  53: 1 op, 818044700.00 ns, 818.0447 ms/op
+WorkloadActual  54: 1 op, 800344400.00 ns, 800.3444 ms/op
+WorkloadActual  55: 1 op, 808198900.00 ns, 808.1989 ms/op
+WorkloadActual  56: 1 op, 841092100.00 ns, 841.0921 ms/op
+WorkloadActual  57: 1 op, 810008800.00 ns, 810.0088 ms/op
+WorkloadActual  58: 1 op, 802725700.00 ns, 802.7257 ms/op
+WorkloadActual  59: 1 op, 779168800.00 ns, 779.1688 ms/op
+WorkloadActual  60: 1 op, 792562700.00 ns, 792.5627 ms/op
+WorkloadActual  61: 1 op, 798440900.00 ns, 798.4409 ms/op
+WorkloadActual  62: 1 op, 799777400.00 ns, 799.7774 ms/op
+WorkloadActual  63: 1 op, 841072100.00 ns, 841.0721 ms/op
+WorkloadActual  64: 1 op, 819177700.00 ns, 819.1777 ms/op
+WorkloadActual  65: 1 op, 784176500.00 ns, 784.1765 ms/op
+WorkloadActual  66: 1 op, 813563200.00 ns, 813.5632 ms/op
+WorkloadActual  67: 1 op, 813592400.00 ns, 813.5924 ms/op
+WorkloadActual  68: 1 op, 812314100.00 ns, 812.3141 ms/op
+WorkloadActual  69: 1 op, 805264700.00 ns, 805.2647 ms/op
+WorkloadActual  70: 1 op, 843293000.00 ns, 843.2930 ms/op
+WorkloadActual  71: 1 op, 811489300.00 ns, 811.4893 ms/op
+WorkloadActual  72: 1 op, 786687300.00 ns, 786.6873 ms/op
+WorkloadActual  73: 1 op, 794904500.00 ns, 794.9045 ms/op
+WorkloadActual  74: 1 op, 812194100.00 ns, 812.1941 ms/op
+WorkloadActual  75: 1 op, 801593000.00 ns, 801.5930 ms/op
+WorkloadActual  76: 1 op, 794071600.00 ns, 794.0716 ms/op
+WorkloadActual  77: 1 op, 841042500.00 ns, 841.0425 ms/op
+WorkloadActual  78: 1 op, 819543400.00 ns, 819.5434 ms/op
+WorkloadActual  79: 1 op, 782100400.00 ns, 782.1004 ms/op
+WorkloadActual  80: 1 op, 798511200.00 ns, 798.5112 ms/op
+WorkloadActual  81: 1 op, 828830100.00 ns, 828.8301 ms/op
+WorkloadActual  82: 1 op, 813036800.00 ns, 813.0368 ms/op
+WorkloadActual  83: 1 op, 810547900.00 ns, 810.5479 ms/op
+WorkloadActual  84: 1 op, 846264200.00 ns, 846.2642 ms/op
+WorkloadActual  85: 1 op, 809119900.00 ns, 809.1199 ms/op
+WorkloadActual  86: 1 op, 780738200.00 ns, 780.7382 ms/op
+WorkloadActual  87: 1 op, 802169300.00 ns, 802.1693 ms/op
+WorkloadActual  88: 1 op, 782583000.00 ns, 782.5830 ms/op
+WorkloadActual  89: 1 op, 778128200.00 ns, 778.1282 ms/op
+WorkloadActual  90: 1 op, 796493500.00 ns, 796.4935 ms/op
+WorkloadActual  91: 1 op, 830649800.00 ns, 830.6498 ms/op
+WorkloadActual  92: 1 op, 830377900.00 ns, 830.3779 ms/op
+WorkloadActual  93: 1 op, 794603800.00 ns, 794.6038 ms/op
+WorkloadActual  94: 1 op, 812723100.00 ns, 812.7231 ms/op
+WorkloadActual  95: 1 op, 825606600.00 ns, 825.6066 ms/op
+WorkloadActual  96: 1 op, 780055700.00 ns, 780.0557 ms/op
+WorkloadActual  97: 1 op, 777298000.00 ns, 777.2980 ms/op
+WorkloadActual  98: 1 op, 819701200.00 ns, 819.7012 ms/op
+WorkloadActual  99: 1 op, 817419100.00 ns, 817.4191 ms/op
+WorkloadActual  100: 1 op, 777175000.00 ns, 777.1750 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 1224013300.00 ns, 1.2240 s/op
+WorkloadResult   2: 1 op, 772616500.00 ns, 772.6165 ms/op
+WorkloadResult   3: 1 op, 770116500.00 ns, 770.1165 ms/op
+WorkloadResult   4: 1 op, 767728800.00 ns, 767.7288 ms/op
+WorkloadResult   5: 1 op, 775829900.00 ns, 775.8299 ms/op
+WorkloadResult   6: 1 op, 763699100.00 ns, 763.6991 ms/op
+WorkloadResult   7: 1 op, 813492200.00 ns, 813.4922 ms/op
+WorkloadResult   8: 1 op, 826010800.00 ns, 826.0108 ms/op
+WorkloadResult   9: 1 op, 785371400.00 ns, 785.3714 ms/op
+WorkloadResult  10: 1 op, 752038100.00 ns, 752.0381 ms/op
+WorkloadResult  11: 1 op, 770708500.00 ns, 770.7085 ms/op
+WorkloadResult  12: 1 op, 760953700.00 ns, 760.9537 ms/op
+WorkloadResult  13: 1 op, 767861000.00 ns, 767.8610 ms/op
+WorkloadResult  14: 1 op, 772042200.00 ns, 772.0422 ms/op
+WorkloadResult  15: 1 op, 813921900.00 ns, 813.9219 ms/op
+WorkloadResult  16: 1 op, 821534300.00 ns, 821.5343 ms/op
+WorkloadResult  17: 1 op, 775093800.00 ns, 775.0938 ms/op
+WorkloadResult  18: 1 op, 812878700.00 ns, 812.8787 ms/op
+WorkloadResult  19: 1 op, 754526400.00 ns, 754.5264 ms/op
+WorkloadResult  20: 1 op, 784872000.00 ns, 784.8720 ms/op
+WorkloadResult  21: 1 op, 765528700.00 ns, 765.5287 ms/op
+WorkloadResult  22: 1 op, 802685200.00 ns, 802.6852 ms/op
+WorkloadResult  23: 1 op, 804354000.00 ns, 804.3540 ms/op
+WorkloadResult  24: 1 op, 766224800.00 ns, 766.2248 ms/op
+WorkloadResult  25: 1 op, 771928100.00 ns, 771.9281 ms/op
+WorkloadResult  26: 1 op, 770112700.00 ns, 770.1127 ms/op
+WorkloadResult  27: 1 op, 774132800.00 ns, 774.1328 ms/op
+WorkloadResult  28: 1 op, 765836500.00 ns, 765.8365 ms/op
+WorkloadResult  29: 1 op, 783824100.00 ns, 783.8241 ms/op
+WorkloadResult  30: 1 op, 821077700.00 ns, 821.0777 ms/op
+WorkloadResult  31: 1 op, 819727900.00 ns, 819.7279 ms/op
+WorkloadResult  32: 1 op, 791640500.00 ns, 791.6405 ms/op
+WorkloadResult  33: 1 op, 793299300.00 ns, 793.2993 ms/op
+WorkloadResult  34: 1 op, 776178400.00 ns, 776.1784 ms/op
+WorkloadResult  35: 1 op, 775492700.00 ns, 775.4927 ms/op
+WorkloadResult  36: 1 op, 775357300.00 ns, 775.3573 ms/op
+WorkloadResult  37: 1 op, 782484800.00 ns, 782.4848 ms/op
+WorkloadResult  38: 1 op, 806658900.00 ns, 806.6589 ms/op
+WorkloadResult  39: 1 op, 812115600.00 ns, 812.1156 ms/op
+WorkloadResult  40: 1 op, 791114300.00 ns, 791.1143 ms/op
+WorkloadResult  41: 1 op, 800181000.00 ns, 800.1810 ms/op
+WorkloadResult  42: 1 op, 848810200.00 ns, 848.8102 ms/op
+WorkloadResult  43: 1 op, 831119200.00 ns, 831.1192 ms/op
+WorkloadResult  44: 1 op, 796158400.00 ns, 796.1584 ms/op
+WorkloadResult  45: 1 op, 801859000.00 ns, 801.8590 ms/op
+WorkloadResult  46: 1 op, 805795200.00 ns, 805.7952 ms/op
+WorkloadResult  47: 1 op, 807414600.00 ns, 807.4146 ms/op
+WorkloadResult  48: 1 op, 772309000.00 ns, 772.3090 ms/op
+WorkloadResult  49: 1 op, 788394400.00 ns, 788.3944 ms/op
+WorkloadResult  50: 1 op, 797993400.00 ns, 797.9934 ms/op
+WorkloadResult  51: 1 op, 826001900.00 ns, 826.0019 ms/op
+WorkloadResult  52: 1 op, 826697500.00 ns, 826.6975 ms/op
+WorkloadResult  53: 1 op, 818044700.00 ns, 818.0447 ms/op
+WorkloadResult  54: 1 op, 800344400.00 ns, 800.3444 ms/op
+WorkloadResult  55: 1 op, 808198900.00 ns, 808.1989 ms/op
+WorkloadResult  56: 1 op, 841092100.00 ns, 841.0921 ms/op
+WorkloadResult  57: 1 op, 810008800.00 ns, 810.0088 ms/op
+WorkloadResult  58: 1 op, 802725700.00 ns, 802.7257 ms/op
+WorkloadResult  59: 1 op, 779168800.00 ns, 779.1688 ms/op
+WorkloadResult  60: 1 op, 792562700.00 ns, 792.5627 ms/op
+WorkloadResult  61: 1 op, 798440900.00 ns, 798.4409 ms/op
+WorkloadResult  62: 1 op, 799777400.00 ns, 799.7774 ms/op
+WorkloadResult  63: 1 op, 841072100.00 ns, 841.0721 ms/op
+WorkloadResult  64: 1 op, 819177700.00 ns, 819.1777 ms/op
+WorkloadResult  65: 1 op, 784176500.00 ns, 784.1765 ms/op
+WorkloadResult  66: 1 op, 813563200.00 ns, 813.5632 ms/op
+WorkloadResult  67: 1 op, 813592400.00 ns, 813.5924 ms/op
+WorkloadResult  68: 1 op, 812314100.00 ns, 812.3141 ms/op
+WorkloadResult  69: 1 op, 805264700.00 ns, 805.2647 ms/op
+WorkloadResult  70: 1 op, 843293000.00 ns, 843.2930 ms/op
+WorkloadResult  71: 1 op, 811489300.00 ns, 811.4893 ms/op
+WorkloadResult  72: 1 op, 786687300.00 ns, 786.6873 ms/op
+WorkloadResult  73: 1 op, 794904500.00 ns, 794.9045 ms/op
+WorkloadResult  74: 1 op, 812194100.00 ns, 812.1941 ms/op
+WorkloadResult  75: 1 op, 801593000.00 ns, 801.5930 ms/op
+WorkloadResult  76: 1 op, 794071600.00 ns, 794.0716 ms/op
+WorkloadResult  77: 1 op, 841042500.00 ns, 841.0425 ms/op
+WorkloadResult  78: 1 op, 819543400.00 ns, 819.5434 ms/op
+WorkloadResult  79: 1 op, 782100400.00 ns, 782.1004 ms/op
+WorkloadResult  80: 1 op, 798511200.00 ns, 798.5112 ms/op
+WorkloadResult  81: 1 op, 828830100.00 ns, 828.8301 ms/op
+WorkloadResult  82: 1 op, 813036800.00 ns, 813.0368 ms/op
+WorkloadResult  83: 1 op, 810547900.00 ns, 810.5479 ms/op
+WorkloadResult  84: 1 op, 846264200.00 ns, 846.2642 ms/op
+WorkloadResult  85: 1 op, 809119900.00 ns, 809.1199 ms/op
+WorkloadResult  86: 1 op, 780738200.00 ns, 780.7382 ms/op
+WorkloadResult  87: 1 op, 802169300.00 ns, 802.1693 ms/op
+WorkloadResult  88: 1 op, 782583000.00 ns, 782.5830 ms/op
+WorkloadResult  89: 1 op, 778128200.00 ns, 778.1282 ms/op
+WorkloadResult  90: 1 op, 796493500.00 ns, 796.4935 ms/op
+WorkloadResult  91: 1 op, 830649800.00 ns, 830.6498 ms/op
+WorkloadResult  92: 1 op, 830377900.00 ns, 830.3779 ms/op
+WorkloadResult  93: 1 op, 794603800.00 ns, 794.6038 ms/op
+WorkloadResult  94: 1 op, 812723100.00 ns, 812.7231 ms/op
+WorkloadResult  95: 1 op, 825606600.00 ns, 825.6066 ms/op
+WorkloadResult  96: 1 op, 780055700.00 ns, 780.0557 ms/op
+WorkloadResult  97: 1 op, 777298000.00 ns, 777.2980 ms/op
+WorkloadResult  98: 1 op, 819701200.00 ns, 819.7012 ms/op
+WorkloadResult  99: 1 op, 817419100.00 ns, 817.4191 ms/op
+WorkloadResult  100: 1 op, 777175000.00 ns, 777.1750 ms/op
+GC:  19 8 2 134009824 1
+Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 2008 has exited with code 0.
+
+Mean = 802.763 ms, StdErr = 4.818 ms (0.60%), N = 100, StdDev = 48.175 ms
+Min = 752.038 ms, Q1 = 778.909 ms, Median = 799.979 ms, Q3 = 813.571 ms, Max = 1,224.013 ms
+IQR = 34.662 ms, LowerFence = 726.916 ms, UpperFence = 865.563 ms
+ConfidenceInterval = [786.424 ms; 819.102 ms] (CI 99.9%), Margin = 16.339 ms (2.04% of Mean)
+Skewness = 6.64, Kurtosis = 58.57, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ORMPYBenchmark.Benchmarks.Read-report.csv
+  BenchmarkDotNet.Artifacts\results\ORMPYBenchmark.Benchmarks.Read-report-github.md
+  BenchmarkDotNet.Artifacts\results\ORMPYBenchmark.Benchmarks.Read-report.html
+
+// * Detailed results *
+Read.DapperRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 245.140 ms, StdErr = 2.028 ms (0.83%), N = 100, StdDev = 20.276 ms
+Min = 222.860 ms, Q1 = 235.226 ms, Median = 245.792 ms, Q3 = 250.861 ms, Max = 425.182 ms
+IQR = 15.635 ms, LowerFence = 211.773 ms, UpperFence = 274.314 ms
+ConfidenceInterval = [238.264 ms; 252.017 ms] (CI 99.9%), Margin = 6.877 ms (2.81% of Mean)
+Skewness = 6.94, Kurtosis = 62.24, MValue = 3.53
+-------------------- Histogram --------------------
+[217.127 ms ; 227.885 ms) | @
+[227.885 ms ; 239.352 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[239.352 ms ; 246.184 ms) | @@@@@@
+[246.184 ms ; 257.651 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[257.651 ms ; 265.202 ms) | @
+[265.202 ms ; 276.669 ms) | 
+[276.669 ms ; 288.137 ms) | 
+[288.137 ms ; 299.604 ms) | 
+[299.604 ms ; 311.071 ms) | 
+[311.071 ms ; 322.538 ms) | 
+[322.538 ms ; 334.005 ms) | 
+[334.005 ms ; 345.472 ms) | 
+[345.472 ms ; 356.939 ms) | 
+[356.939 ms ; 368.406 ms) | 
+[368.406 ms ; 379.873 ms) | 
+[379.873 ms ; 391.340 ms) | 
+[391.340 ms ; 402.808 ms) | 
+[402.808 ms ; 419.449 ms) | 
+[419.449 ms ; 430.916 ms) | @
+---------------------------------------------------
+
+Read.EFCoreRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 465.312 ms, StdErr = 10.391 ms (2.23%), N = 100, StdDev = 103.912 ms
+Min = 438.332 ms, Q1 = 450.908 ms, Median = 454.477 ms, Q3 = 457.510 ms, Max = 1,490.193 ms
+IQR = 6.602 ms, LowerFence = 441.005 ms, UpperFence = 467.413 ms
+ConfidenceInterval = [430.070 ms; 500.554 ms] (CI 99.9%), Margin = 35.242 ms (7.57% of Mean)
+Skewness = 9.59, Kurtosis = 94.63, MValue = 2
+-------------------- Histogram --------------------
+[  433.348 ms ;   492.114 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[  492.114 ms ;   537.407 ms) | @
+[  537.407 ms ;   596.173 ms) | 
+[  596.173 ms ;   654.939 ms) | 
+[  654.939 ms ;   713.705 ms) | 
+[  713.705 ms ;   772.472 ms) | 
+[  772.472 ms ;   831.238 ms) | 
+[  831.238 ms ;   890.004 ms) | 
+[  890.004 ms ;   948.770 ms) | 
+[  948.770 ms ; 1,007.537 ms) | 
+[1,007.537 ms ; 1,066.303 ms) | 
+[1,066.303 ms ; 1,125.069 ms) | 
+[1,125.069 ms ; 1,183.835 ms) | 
+[1,183.835 ms ; 1,242.602 ms) | 
+[1,242.602 ms ; 1,301.368 ms) | 
+[1,301.368 ms ; 1,360.134 ms) | 
+[1,360.134 ms ; 1,418.900 ms) | 
+[1,418.900 ms ; 1,460.810 ms) | 
+[1,460.810 ms ; 1,519.576 ms) | @
+---------------------------------------------------
+
+Read.NHibernateRead: Okuma Karsilastirmalari(Runtime=.NET 6.0, IterationCount=100, RunStrategy=ColdStart)
+Runtime = .NET 6.0.1 (6.0.121.56705), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 802.763 ms, StdErr = 4.818 ms (0.60%), N = 100, StdDev = 48.175 ms
+Min = 752.038 ms, Q1 = 778.909 ms, Median = 799.979 ms, Q3 = 813.571 ms, Max = 1,224.013 ms
+IQR = 34.662 ms, LowerFence = 726.916 ms, UpperFence = 865.563 ms
+ConfidenceInterval = [786.424 ms; 819.102 ms] (CI 99.9%), Margin = 16.339 ms (2.04% of Mean)
+Skewness = 6.64, Kurtosis = 58.57, MValue = 2
+-------------------- Histogram --------------------
+[  738.416 ms ;   764.962 ms) | @@@@
+[  764.962 ms ;   792.523 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[  792.523 ms ;   819.768 ms) | @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[  819.768 ms ;   847.294 ms) | @@@@@@@@@@@@@@@
+[  847.294 ms ;   889.678 ms) | @
+[  889.678 ms ;   916.923 ms) | 
+[  916.923 ms ;   944.168 ms) | 
+[  944.168 ms ;   971.413 ms) | 
+[  971.413 ms ;   998.658 ms) | 
+[  998.658 ms ; 1,025.903 ms) | 
+[1,025.903 ms ; 1,053.149 ms) | 
+[1,053.149 ms ; 1,080.394 ms) | 
+[1,080.394 ms ; 1,107.639 ms) | 
+[1,107.639 ms ; 1,134.884 ms) | 
+[1,134.884 ms ; 1,162.129 ms) | 
+[1,162.129 ms ; 1,189.374 ms) | 
+[1,189.374 ms ; 1,210.391 ms) | 
+[1,210.391 ms ; 1,237.636 ms) | @
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1766 (21H1/May2021Update)
+Intel Core i5-7300HQ CPU 2.50GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+.NET SDK=6.0.101
+  [Host]                  : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT  [AttachedDebugger]
+  Okuma Karsilastirmalari : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+
+Job=Okuma Karsilastirmalari  Runtime=.NET 6.0  IterationCount=100  
+RunStrategy=ColdStart  
+
+|         Method |     Mean |    Error |    StdDev | Rank |      Gen 0 |     Gen 1 |     Gen 2 | Allocated |
+|--------------- |---------:|---------:|----------:|-----:|-----------:|----------:|----------:|----------:|
+|     DapperRead | 245.1 ms |  6.88 ms |  20.28 ms |    1 |  6000.0000 | 2000.0000 |         - |     37 MB |
+|     EFCoreRead | 465.3 ms | 35.24 ms | 103.91 ms |    2 | 18000.0000 | 6000.0000 | 1000.0000 |    121 MB |
+| NHibernateRead | 802.8 ms | 16.34 ms |  48.18 ms |    3 | 19000.0000 | 8000.0000 | 2000.0000 |    128 MB |
+
+// * Warnings *
+Environment
+  Summary -> Benchmark was executed with attached debugger
+MultimodalDistribution
+  Read.DapperRead: Okuma Karsilastirmalari -> It seems that the distribution is bimodal (mValue = 3.53)
+
+// * Hints *
+Outliers
+  Read.DapperRead: Okuma Karsilastirmalari     -> 1 outlier  was  detected (425.18 ms)
+  Read.EFCoreRead: Okuma Karsilastirmalari     -> 9 outliers were detected (438.33 ms..439.55 ms, 469.52 ms..1.49 s)
+  Read.NHibernateRead: Okuma Karsilastirmalari -> 1 outlier  was  detected (1.22 s)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Rank      : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Gen 1     : GC Generation 1 collects per 1000 operations
+  Gen 2     : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:02:43 (163.86 sec), executed benchmarks: 3
+
+Global total time: 00:02:48 (169 sec), executed benchmarks: 3
+// * Artifacts cleanup *

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>ORMPYBenchmark.Benchmarks.Join-20220621-224912</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1766 (21H1/May2021Update)
+Intel Core i5-7300HQ CPU 2.50GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+.NET SDK=6.0.101
+  [Host]                 : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT  [AttachedDebugger]
+  Join Karsilastirmalari : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+</code></pre>
+<pre><code>Job=Join Karsilastirmalari  Runtime=.NET 6.0  IterationCount=100  
+RunStrategy=ColdStart  
+</code></pre>
+
+<table>
+<thead><tr><th>  Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>DapperJoin</td><td>1.594 s</td><td>0.0368 s</td><td>0.1086 s</td><td>1</td><td>9000.0000</td><td>4000.0000</td><td>1000.0000</td><td>50 MB</td>
+</tr><tr><td>EFCoreJoin</td><td>1.610 s</td><td>0.0390 s</td><td>0.1149 s</td><td>1</td><td>7000.0000</td><td>2000.0000</td><td>-</td><td>46 MB</td>
+</tr><tr><td>NHibernateJoin</td><td>1.945 s</td><td>0.0346 s</td><td>0.1019 s</td><td>2</td><td>21000.0000</td><td>9000.0000</td><td>2000.0000</td><td>137 MB</td>
+</tr></tbody></table>
+</body>
+</html>

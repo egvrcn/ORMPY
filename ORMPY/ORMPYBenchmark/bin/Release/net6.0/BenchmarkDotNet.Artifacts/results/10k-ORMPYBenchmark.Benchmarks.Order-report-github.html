@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>ORMPYBenchmark.Benchmarks.Order-20220620-221737</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.19043.1766 (21H1/May2021Update)
+Intel Core i5-7300HQ CPU 2.50GHz (Kaby Lake), 1 CPU, 4 logical and 4 physical cores
+.NET SDK=6.0.101
+  [Host]                     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT  [AttachedDebugger]
+  Siralama Karsilastirmalari : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+</code></pre>
+<pre><code>Job=Siralama Karsilastirmalari  Runtime=.NET 6.0  IterationCount=100  
+RunStrategy=ColdStart  
+</code></pre>
+
+<table>
+<thead><tr><th>   Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Gen 0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>DapperOrder</td><td>114.9 ms</td><td>5.01 ms</td><td>14.77 ms</td><td>1</td><td>1000.0000</td><td>4 MB</td>
+</tr><tr><td>EFCoreOrder</td><td>144.3 ms</td><td>33.41 ms</td><td>98.50 ms</td><td>2</td><td>1000.0000</td><td>12 MB</td>
+</tr><tr><td>NHibernateOrder</td><td>146.2 ms</td><td>12.32 ms</td><td>36.33 ms</td><td>3</td><td>1000.0000</td><td>12 MB</td>
+</tr></tbody></table>
+</body>
+</html>

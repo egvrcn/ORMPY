@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6d4ac296-af08-424c-be4d-82d0de707bbb": {
+      "ProjectGuid": "6d4ac296-af08-424c-be4d-82d0de707bbb",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 0
+    },
+    "116d46df-4daf-4aba-aaed-6e768a1812b8": {
+      "ProjectGuid": "116d46df-4daf-4aba-aaed-6e768a1812b8",
+      "DisplayName": "EntityLayer",
+      "ColorIndex": 1
+    },
+    "a114f912-74af-4107-9d7b-23c5cba8b20f": {
+      "ProjectGuid": "a114f912-74af-4107-9d7b-23c5cba8b20f",
+      "DisplayName": "ORMPYBenchmark",
+      "ColorIndex": 2
+    },
+    "ded6d11d-2f42-449c-9368-3a14741d8135": {
+      "ProjectGuid": "ded6d11d-2f42-449c-9368-3a14741d8135",
+      "DisplayName": "ORMPYBenchmark",
+      "ColorIndex": 3
+    },
+    "6c2e1ffa-0c25-4b17-8e8d-085476894edc": {
+      "ProjectGuid": "6c2e1ffa-0c25-4b17-8e8d-085476894edc",
+      "DisplayName": "ORMPYCPU",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}

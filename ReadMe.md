@@ -1,0 +1,3 @@
+# ORMPY
+.NET 6 ortamında ORM araçlarının performans analizini gerçekleştiren ORM Performans Yazılım aracı.
+Başlıca ORM araçlarından Dapper, Entity Framework Core ve NHibernate için hazır bir performans test ortamı sunmaktadır. BenchmarkDotNet ve Microsoft Diagnoser kullanılarak işlem süresi, RAM ve CPU kullanım bilgileri elde edilmektedir. Select, Insert, Update, Delete, Order, Search ve Join işlemlerinin karşılaştırmalarının hazır bir şekilde yapılabilmesini sağlamaktadır.
